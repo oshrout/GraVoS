@@ -15,7 +15,7 @@ The code was tested in the following environment:
 conda create --name GraVoS python==3.7
 conda activate GraVoS
 pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
-git clone (TODO)
+git clone https://github.com/oshrout/GraVoS
 cd GraVoS
 pip install -r requirements.txt
 ```
