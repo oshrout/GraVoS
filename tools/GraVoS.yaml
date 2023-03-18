@@ -1,0 +1,32 @@
+SECONDNet:
+    cfg_t_file: 'cfgs/kitti_models/second_t.yaml'
+    pretrain_path: ['../pre_trained/kitti_models/second/kitti_second_80epochs_4batchsize_late_detector/checkpoint_epoch_80.pth',
+                    '../pre_trained/kitti_models/second/kitti_second_1epoch_4batchsize_early_detector/checkpoint_epoch_1.pth']
+
+VoxelRCNN:
+    cfg_t_file: 'cfgs/kitti_models/voxel_rcnn_t.yaml'
+    pretrain_path: ['../pre_trained/kitti_models/voxel_rcnn/kitti_voxelrcnn_80epochs_3batchsize_late_detector/checkpoint_epoch_80.pth',
+                    '../pre_trained/kitti_models/voxel_rcnn/kitti_voxelrcnn_1epoch_3batchsize_early_detector/checkpoint_epoch_1.pth']
+
+PartA2Net:
+    cfg_t_file: 'cfgs/kitti_models/PartA2_t.yaml'
+    pretrain_path: ['../pre_trained/kitti_models/PartA2/kitti_parta2_80epochs_4batchsize_late_detector/checkpoint_epoch_80.pth',
+                    '../pre_trained/kitti_models/PartA2/kitti_parta2_1epoch_4batchsize_early_detector/checkpoint_epoch_1.pth']
+
+CenterPoint:
+    cfg_t_file: 'cfgs/kitti_models/centerpoint_t.yaml'
+    pretrain_path: ['../pre_trained/kitti_models/CenterPoint/kitti_centerpoint_80epochs_4batchsize_late_detector/checkpoint_epoch_80.pth',
+                    '../pre_trained/kitti_models/CenterPoint/kitti_centerpoint_1epoch_4batchsize_early_detector/checkpoint_epoch_1.pth']
+
+# choose 'rpn_loss_loc' for all but CenterPoint, 'hm_loss_head_0' is for CenterPoint
+sample_loss: rpn_loss_loc
+voxel_sample_ratio: 0.8
+
+# in case of using only 1 model, only the late_detector config is considered
+sample_method: # support: 'topk', 'mean', 'median'
+    late_detector:
+        method: 'topk'
+        intra_det_ratio: 50/80 # only applicable to 'topk'
+    early_detector:
+        method: 'mean'
+        intra_det_ratio: 30/80 # only applicable to 'topk'
