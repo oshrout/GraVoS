@@ -28,8 +28,15 @@ pip install -r requirements.txt
 TODO
 
 ## Citation
-If you find this project useful, please consider cite:  
-TODO
+If you find this project useful, please consider cite:
+```
+@article{shrout2022gravos,
+  title={GraVoS: Gradient based Voxel Selection for 3D Detection},
+  author={Shrout, Oren and Ben-Shabat, Yizhak and Tal, Ayellet},
+  journal={arXiv preprint arXiv:2208.08780},
+  year={2022}
+}
+```
 
 ## Acknowlegements
 Our code is mostly based on [OpenPCDet](https://github.com/open-mmlab/OpenPCDet).
