@@ -10,7 +10,7 @@ The code was tested in the following environment:
 * spconv 2.1.21
 * spconv-cu111 2.1.21
 
-# Create enviroment
+## Create enviroment
 ```
 conda create --name GraVoS python==3.7
 conda activate GraVoS
@@ -20,7 +20,7 @@ cd GraVoS
 pip install -r requirements.txt
 ```
 
-# Install spconv and OpenPCDet
+## Install spconv and OpenPCDet
 1. Install spconv with pip, see [spconv](https://github.com/traveller59/spconv) for more details.
 2. Install pcdet by running `python setup.py develop`, see [OpenPCDet](https://github.com/open-mmlab/OpenPCDet) for more details.
 
