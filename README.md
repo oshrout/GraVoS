@@ -1,5 +1,5 @@
 # GraVoS: Voxel Selection for 3D Point-Cloud Detection
-This repository contains the PyTorch implementation of the CVPR'2023 paper - [TODO](TODO).
+This repository contains the PyTorch implementation of the CVPR'2023 paper - [GraVoS: Voxel Selection for 3D Point-Cloud Detection](https://arxiv.org/abs/2208.08780).
 
 ## Installation
 The code was tested in the following environment:
@@ -25,7 +25,7 @@ pip install -r requirements.txt
 2. Install pcdet by running `python setup.py develop`, see [OpenPCDet](https://github.com/open-mmlab/OpenPCDet) for more details.
 
 ## License
-TODO
+This project is realeased under the [Apache License 2.0](https://github.com/oshrout/GraVoS/blob/master/LICENSE).
 
 ## Citation
 If you find this project useful, please consider cite:
