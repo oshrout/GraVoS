@@ -1,5 +1,5 @@
 ccimport==0.3.7
-certifi==2022.12.7
+certifi==2023.7.22
 charset-normalizer==3.1.0
 cumm==0.2.8
 cumm-cu111==0.2.9
